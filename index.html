@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chocolate Cake Recipe</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- WELCOME SCREEN -->
+  <div id="welcome-screen" class="welcome-screen">
+    <h1>🍰 Chocolate Cake</h1>
+    <img src="chocolate-cake.jpg" alt="Chocolate Cake">
+    <p>Select type:</p>
+    <div class="choice-buttons">
+      <button id="veg-btn" class="btn glow">🥦 Veg</button>
+      <button id="nonveg-btn" class="btn">🍗 Non-Veg</button>
+    </div>
+  </div>
+
+  <!-- RECIPE SCREEN -->
+  <div id="recipe-screen" class="hidden recipe-card">
+    <h1 class="title">🍫 Chocolate Cake</h1>
+    <div class="info">
+      <span>⏱ <strong>Prep:</strong> 45 mins</span>
+      <span>👨‍👩‍👧‍👦 <strong>Serves:</strong> 4</span>
+    </div>
+
+    <button id="toggle-ingredients" class="btn glow">▶ Show Ingredients</button>
+    <ul id="ingredients" class="hidden list">
+      <li class="ingredient-item">1 cup flour</li>
+      <li class="ingredient-item">1/2 cup cocoa powder</li>
+      <li class="ingredient-item">1 cup sugar</li>
+      <li class="ingredient-item">2 eggs</li>
+      <li class="ingredient-item">1/2 cup milk</li>
+    </ul>
+
+    <button id="start-cooking" class="btn glow">🍽 Start Cooking</button>
+    <p id="timer" class="timer">Time Left: 45:00</p>
+
+    <ol id="steps" class="list">
+      <li>Preheat oven to 180°C.</li>
+      <li>Mix dry ingredients together.</li>
+      <li>Add wet ingredients and stir well.</li>
+      <li>Pour into a greased pan.</li>
+      <li>Bake for 30-35 minutes.</li>
+    </ol>
+
+    <div class="progress-bar">
+      <div id="progress" class="progress"></div>
+    </div>
+
+    <button id="reset" class="btn reset-btn">🔄 Reset</button>
+  </div>
+
+  <!-- Animation Box -->
+  <div id="animation-box" class="animation-box">🥣 Pouring...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
